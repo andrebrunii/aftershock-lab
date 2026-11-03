@@ -1,0 +1,31 @@
+name: Rehearse and verify
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Test replay, trust boundaries and rollback conflicts
+        run: python -m unittest discover -s tests -v
+      - name: Static security gate
+        run: python -m bandit -r aftershock -ll
+      - name: Reproduce the experiment
+        run: python -m aftershock demo
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aftershock-evidence-${{ matrix.os }}
+          path: output/
+          retention-days: 7
+          if-no-files-found: error

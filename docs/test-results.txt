@@ -1,0 +1,36 @@
+test_invalid_model_output_recorded_without_execution (test_aftershock.ModelAdapterTests.test_invalid_model_output_recorded_without_execution) ... ok
+test_structured_response_is_advisory_and_loopback_only (test_aftershock.ModelAdapterTests.test_structured_response_is_advisory_and_loopback_only) ... ok
+test_budget_is_explicit_and_cannot_disable_control_integrity (test_aftershock.ReplayTests.test_budget_is_explicit_and_cannot_disable_control_integrity) ... ok
+test_cycle_fails_closed (test_aftershock.ReplayTests.test_cycle_fails_closed) ... ok
+test_every_shared_identity_option_is_denied (test_aftershock.ReplayTests.test_every_shared_identity_option_is_denied) ... ok
+test_exact_collateral_boundary (test_aftershock.ReplayTests.test_exact_collateral_boundary) ... ok
+test_handwritten_contract_suite (test_aftershock.ReplayTests.test_handwritten_contract_suite) ... ok
+test_legitimate_sensitive_path_counterexample_flips_verdict (test_aftershock.ReplayTests.test_legitimate_sensitive_path_counterexample_flips_verdict) ... ok
+test_log_authority_claim_cannot_change_policy (test_aftershock.ReplayTests.test_log_authority_claim_cannot_change_policy) ... ok
+test_missing_dependency_fails_closed (test_aftershock.ReplayTests.test_missing_dependency_fails_closed) ... ok
+test_no_attack_denominator_cannot_pass (test_aftershock.ReplayTests.test_no_attack_denominator_cannot_pass) ... ok
+test_no_input_mutation_and_deterministic_replay (test_aftershock.ReplayTests.test_no_input_mutation_and_deterministic_replay) ... ok
+test_payment_signature_control_beats_ip_block (test_aftershock.ReplayTests.test_payment_signature_control_beats_ip_block) ... ok
+test_proposal_contract_rejects_fabrication (test_aftershock.ReplayTests.test_proposal_contract_rejects_fabrication) ... ok
+test_proposer_context_withholds_evaluator_truth (test_aftershock.ReplayTests.test_proposer_context_withholds_evaluator_truth) ... ok
+test_scoped_control_preserves_benign_requests (test_aftershock.ReplayTests.test_scoped_control_preserves_benign_requests) ... ok
+test_service_dependency_propagates_loss (test_aftershock.ReplayTests.test_service_dependency_propagates_loss) ... ok
+test_shared_nat_block_harms_600_customers (test_aftershock.ReplayTests.test_shared_nat_block_harms_600_customers) ... ok
+test_unknowns_do_not_become_benign (test_aftershock.ReplayTests.test_unknowns_do_not_become_benign) ... ok
+test_aba_change_is_detected (test_aftershock.TransactionTests.test_aba_change_is_detected) ... ok
+test_approval_cannot_override_denial (test_aftershock.TransactionTests.test_approval_cannot_override_denial) ... ok
+test_approval_is_bound_to_exact_plan (test_aftershock.TransactionTests.test_approval_is_bound_to_exact_plan) ... ok
+test_audit_alteration_and_anchored_truncation (test_aftershock.TransactionTests.test_audit_alteration_and_anchored_truncation) ... ok
+test_multi_cell_rollback_is_atomic (test_aftershock.TransactionTests.test_multi_cell_rollback_is_atomic) ... ok
+test_reapplying_old_plan_is_rejected (test_aftershock.TransactionTests.test_reapplying_old_plan_is_rejected) ... ok
+test_rollback_is_idempotent (test_aftershock.TransactionTests.test_rollback_is_idempotent) ... ok
+test_rollback_preserves_unrelated_operator_change (test_aftershock.TransactionTests.test_rollback_preserves_unrelated_operator_change) ... ok
+test_rollback_refuses_same_value_newer_revision (test_aftershock.TransactionTests.test_rollback_refuses_same_value_newer_revision) ... ok
+test_second_connection_observes_stale_plan (test_aftershock.TransactionTests.test_second_connection_observes_stale_plan) ... ok
+test_stale_plan_rejected_before_writing (test_aftershock.TransactionTests.test_stale_plan_rejected_before_writing) ... ok
+test_tampered_plan_metrics_recomputed (test_aftershock.TransactionTests.test_tampered_plan_metrics_recomputed) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.207s
+
+OK

@@ -1,0 +1,16 @@
+{
+  "dom_interactions": "passed",
+  "checks": [
+    "default counts",
+    "scoped action",
+    "budget changes eligibility",
+    "no-safe-action scenario",
+    "unknown coverage",
+    "rollback conflict",
+    "unrelated edit preserved",
+    "eight fixture rows",
+    "no script errors"
+  ],
+  "renderer": "jsdom",
+  "visual_browser_audit": false
+}
